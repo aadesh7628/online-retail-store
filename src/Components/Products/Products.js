@@ -1,6 +1,6 @@
 import React from 'react'
 import './Products.css'
-import iconCart from 'E:/Projects/CAPSTONE PROJECT/online-retail-store/src/assets/images/iconCart.png'
+import iconCart from '/Users/meghanagm/Desktop/react/react/online-retail-store/src/assets/images/iconCart.png'
 function Products(props) {
     const { id, name, price, image } = props.data;
     return (
