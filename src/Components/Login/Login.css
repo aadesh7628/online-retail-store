@@ -1,0 +1,159 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.form-container:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); 
+}
+
+.form-toggle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-toggle button {
+    width: 50%;
+    padding: 18px 6px;
+    background-color: #f3f3f3;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px 10px 0 0;
+    transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+}
+
+
+.form-toggle .active {
+    background-color: #033452;
+    color: white;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form h2 {
+    margin-bottom: 24px;
+    color: #033452;
+    font-size: 24px;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.input-container input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    width: 94%;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.input-container input:focus {
+    border-color: #033452;
+    outline: none;
+    border-top: 1px solid #e6e4e4;
+    border-bottom: 1px solid #adaaaa;
+    border-left: 1px solid #adaaaa;
+    border-right: 1px solid #adaaaa;
+    z-index: 1;
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+    top: -11px;
+    left: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #033452;
+    z-index: 2;
+}
+
+.input-container label {
+    position: absolute;
+    left: 12px;
+    top: 8px;
+    font-size: 17px;
+    transition: all 0.3s ease-in-out;
+    color: #999;
+    pointer-events: none;
+}
+
+.form button,.mainbutton1 {
+    padding: 12px;
+    background-color: #033452;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.form button:hover,.mainbutton1:hover {
+    background-color: #02263d;
+}
+
+.form a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: right;
+    padding: 12px 0px;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+.form p {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+@media screen and (max-width: 480px) {
+    .form-container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .form-toggle button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .form h2 {
+        font-size: 20px;
+    }
+
+    .input-container input {
+        padding: 10px;
+    }
+
+    .form button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}

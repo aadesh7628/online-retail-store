@@ -14,11 +14,14 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 .productBox:hover{
     transform: scale(1.05);
+    .productImg{
+        filter: drop-shadow(0 60px 15px rgba(55, 55, 55, 0.359));
+    }
 }
 
 .productImg {
@@ -27,9 +30,9 @@
     border-radius: 5px;
     margin-bottom: 10px;
     object-fit: contain;
-    mix-blend-mode:  multiply;
     filter: drop-shadow(0 60px 15px rgba(0, 0, 0, 0.382));
     object-position: cover;
+    transition: filter 0.3s ease;
 }
 
 .productName {
@@ -52,7 +55,7 @@
     color: #007bff;
 }
 
-button {
+.carticon {
     background-color: #28a745;
     border: none;
     color: white;
@@ -66,11 +69,11 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+.productBuy > button:hover{
     background-color: #218838;
 }
 
-button img {
+.carticon img {
     width: 16px;
     height: 16px;
 }

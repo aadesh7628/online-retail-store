@@ -1,5 +1,5 @@
 .category{
-    background-color: rgba(246, 240, 240, 0.808);
+    /* background-color: rgba(246, 240, 240, 0.808); */
     padding: 1px;
     height: auto;
 }
@@ -13,4 +13,20 @@
     flex-wrap: wrap; 
     justify-content: space-evenly;
     gap: 20px;
+}
+
+.viewMore{
+    height: 450px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid rgb(167, 160, 160);
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    top: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.category > div > div ~ a button:hover{
+    background-color: rgba(246, 240, 240, 0.808);
 }

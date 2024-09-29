@@ -1,67 +1,75 @@
-import imgCat1_1 from '../assets/images/category1/1.png'
-import imgCat1_2 from '../assets/images/category1/2.png'
-import imgCat1_3 from '../assets/images/category1/3.png'
-import imgCat1_4 from '../assets/images/category1/4.png'
-import imgCat1_5 from '../assets/images/category1/5.png'
-import imgCat1_6 from '../assets/images/category1/6.png'
-import imgCat1_7 from '../assets/images/category1/7.png'
-import imgCat1_8 from '../assets/images/category1/8.png'
+import imgCat2_1 from '../assets/images/category2/1.png'
+import imgCat2_2 from '../assets/images/category2/2.png'
+import imgCat2_3 from '../assets/images/category2/3.png'
+import imgCat2_4 from '../assets/images/category2/4.png'
+import imgCat2_5 from '../assets/images/category2/5.png'
+import imgCat2_6 from '../assets/images/category2/6.png'
+import imgCat2_7 from '../assets/images/category2/7.png'
+import imgCat2_8 from '../assets/images/category2/8.png'
 
-export const category1 = [
+
+export const mobilesProduct = [
     {
-        id: 1,
-        name: 'Hertfoid Upholstered Chair',
-        price: 7499, 
-        image: imgCat1_1,
+        id: 9,
+        name: 'Samsung Galaxy Z Fold6 5G AI Smartphone',
+        price: 200998, 
+        image: imgCat2_1,
         description: 'Mollit anim consectetur adipisicing aute pariatur ad mollit ad. Officia amet aliqua non laborum dolore sint sit eu sit sunt laboris. Dolor tempor ipsum culpa Lorem ipsum ullamco ullamco dolor sit do. Do proident quis ad laborum et proident laborum. Non voluptate eiusmod aute labore ea aute.'
     },
     {
-        id: 2,
-        name: 'Abingdon Upholstered Chair Swivel',
-        price: 9999, 
-        image: imgCat1_2,
+        id: 10,
+        name: 'Samsung Galaxy S24 Ultra 5G AI Smartphone',
+        price: 131999, 
+        image: imgCat2_2,
         description: 'Mollit anim consectetur adipisicing aute pariatur ad mollit ad. Officia amet aliqua non laborum dolore sint sit eu sit sunt laboris. Dolor tempor ipsum culpa Lorem ipsum ullamco ullamco dolor sit do. Do proident quis ad laborum et proident laborum. Non voluptate eiusmod aute labore ea aute.'
     },
     {
-        id: 3,
-        name: 'Jeses Minimore Modern Style Etta',
-        price: 13999, 
-        image: imgCat1_3,
+        id: 11,
+        name: 'Samsung Galaxy S23 Ultra 5G AI Smartphone',
+        price: 84999, 
+        image: imgCat2_3,
         description: 'Mollit anim consectetur adipisicing aute pariatur ad mollit ad. Officia amet aliqua non laborum dolore sint sit eu sit sunt laboris. Dolor tempor ipsum culpa Lorem ipsum ullamco ullamco dolor sit do. Do proident quis ad laborum et proident laborum. Non voluptate eiusmod aute labore ea aute.'
     },
     {
-        id: 4,
-        name: 'JJeses Minimore Modern Style',
-        price: 17999, 
-        image: imgCat1_4,
+        id: 12,
+        name: 'Pixl 9 Pro XL 5G',
+        price: 124999, 
+        image: imgCat2_4,
         description: 'Mollit anim consectetur adipisicing aute pariatur ad mollit ad. Officia amet aliqua non laborum dolore sint sit eu sit sunt laboris. Dolor tempor ipsum culpa Lorem ipsum ullamco ullamco dolor sit do. Do proident quis ad laborum et proident laborum. Non voluptate eiusmod aute labore ea aute.'
     },
     {
-        id: 5,
-        name: 'Bolanle Upholstered Armchair',
-        price: 8999, 
-        image: imgCat1_5,
+        id: 13,
+        name: 'Apple iPhone 16',
+        price: 79900, 
+        image: imgCat2_5,
         description: 'Mollit anim consectetur adipisicing aute pariatur ad mollit ad. Officia amet aliqua non laborum dolore sint sit eu sit sunt laboris. Dolor tempor ipsum culpa Lorem ipsum ullamco ullamco dolor sit do. Do proident quis ad laborum et proident laborum. Non voluptate eiusmod aute labore ea aute.'
     },
     {
-        id: 6,
-        name: 'Jaqueze Upholstered Armchair',
-        price: 10999, 
-        image: imgCat1_6,
+        id: 14,
+        name: 'Apple iPhone 15',
+        price: 65900, 
+        image: imgCat2_6,
         description: 'Mollit anim consectetur adipisicing aute pariatur ad mollit ad. Officia amet aliqua non laborum dolore sint sit eu sit sunt laboris. Dolor tempor ipsum culpa Lorem ipsum ullamco ullamco dolor sit do. Do proident quis ad laborum et proident laborum. Non voluptate eiusmod aute labore ea aute.'
     },
     {
-        id: 7,
-        name: 'Leston Wide Upholstered Fabric',
-        price: 12999, 
-        image: imgCat1_7,
+        id: 15,
+        name: 'Apple iPhone 15 Pro',
+        price: 124200, 
+        image: imgCat2_7,
         description: 'Mollit anim consectetur adipisicing aute pariatur ad mollit ad. Officia amet aliqua non laborum dolore sint sit eu sit sunt laboris. Dolor tempor ipsum culpa Lorem ipsum ullamco ullamco dolor sit do. Do proident quis ad laborum et proident laborum. Non voluptate eiusmod aute labore ea aute.'
     },
     {
-        id: 8,
-        name: 'Stephanny 27.5" Wide Tufted',
-        price: 16999, 
-        image: imgCat1_8,
+        id: 16,
+        name: 'Motorola razr 50 ',
+        price: 64999, 
+        image: imgCat2_8,
         description: 'Mollit anim consectetur adipisicing aute pariatur ad mollit ad. Officia amet aliqua non laborum dolore sint sit eu sit sunt laboris. Dolor tempor ipsum culpa Lorem ipsum ullamco ullamco dolor sit do. Do proident quis ad laborum et proident laborum. Non voluptate eiusmod aute labore ea aute.'
     },
 ];
+
+function getRandomProducts(products, count) {
+    const shuffled = products.sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
+}
+
+export const randomMobileProducts = getRandomProducts(mobilesProduct, 4);

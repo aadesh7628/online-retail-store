@@ -1,0 +1,126 @@
+.useraddress {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.addressin {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.addressin .address {
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    background-color: white;
+    transition: box-shadow 0.3s ease-in-out;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.address h2{
+    margin: 0px;
+    color:#033452;
+}
+
+.addressin .address:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.addressin .address .delbtn {
+    background-color: #033452;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 42px;
+    height: 40px;
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.address .delbtn:hover {
+    background-color:rgb(255, 2, 2);
+    color: black;
+}
+
+.useraddress .addnewbtn {
+    width: 50px;
+    height: 50px;
+    background-color: #033452;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    transition: all 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.useraddress .addnewbtn:hover {
+    background-color: #02263d;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.useraddress .addnew {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #f5f5f5; 
+
+}
+
+@media (max-width: 1000px) {
+    .useraddress .addnewbtn {
+        width: 50px;
+        height: 50px;
+        padding: 8px;
+    }
+
+    .addressin {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .addressin .address {
+        width: 90%;
+    }
+}
+
+@media (max-width: 900px) {
+    .useraddress .form {
+        padding: 10px 20px;
+    }
+
+    .input-container input {
+        padding: 10px;
+    }
+
+    .mainbutton1 {
+        padding: 10px;
+        font-size: 14px;
+    }
+}

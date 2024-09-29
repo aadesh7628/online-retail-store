@@ -1,0 +1,18 @@
+.accountsettings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #f5f5f5; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.mainhead1 {
+    margin-bottom: 24px;
+    color: #033452;
+    font-size: 24px;
+}
+

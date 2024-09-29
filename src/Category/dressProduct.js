@@ -1,66 +1,74 @@
-import imgCat2_1 from '../assets/images/category2/1.png'
-import imgCat2_2 from '../assets/images/category2/2.png'
-import imgCat2_3 from '../assets/images/category2/3.png'
-import imgCat2_4 from '../assets/images/category2/4.png'
-import imgCat2_5 from '../assets/images/category2/5.png'
-import imgCat2_6 from '../assets/images/category2/6.png'
-import imgCat2_7 from '../assets/images/category2/7.png'
-import imgCat2_8 from '../assets/images/category2/8.png'
-export const category2 = [
+import d1 from '../assets/images/dresses/gown.png'
+import d2 from '../assets/images/dresses/lehenga.png'
+import d3 from '../assets/images/dresses/pants.png'
+import d4 from '../assets/images/dresses/tubetop.png'
+import d5 from '../assets/images/dresses/tmen1.png'
+import d6 from '../assets/images/dresses/tmen2.png'
+import d7 from '../assets/images/dresses/t3.png'
+import d8 from '../assets/images/dresses/t4.png'
+
+export const dressProduct = [
     {
-        id: 1,
-        name: 'Samsung Galaxy Z Fold6 5G AI Smartphone',
-        price: 200998, 
-        image: imgCat2_1,
+        id: 33,
+        name: 'Gown',
+        price: 4500,
+        image: d1,
         description: 'Mollit anim consectetur adipisicing aute pariatur ad mollit ad. Officia amet aliqua non laborum dolore sint sit eu sit sunt laboris. Dolor tempor ipsum culpa Lorem ipsum ullamco ullamco dolor sit do. Do proident quis ad laborum et proident laborum. Non voluptate eiusmod aute labore ea aute.'
     },
     {
-        id: 2,
-        name: 'Samsung Galaxy S24 Ultra 5G AI Smartphone',
-        price: 131999, 
-        image: imgCat2_2,
+        id: 34,
+        name: 'Lehenga',
+        price: 45000,
+        image: d2,
         description: 'Mollit anim consectetur adipisicing aute pariatur ad mollit ad. Officia amet aliqua non laborum dolore sint sit eu sit sunt laboris. Dolor tempor ipsum culpa Lorem ipsum ullamco ullamco dolor sit do. Do proident quis ad laborum et proident laborum. Non voluptate eiusmod aute labore ea aute.'
     },
     {
-        id: 3,
-        name: 'Samsung Galaxy S23 Ultra 5G AI Smartphone',
-        price: 84999, 
-        image: imgCat2_3,
+        id: 35,
+        name: 'Women-Pants',
+        price: 500,
+        image: d3,
         description: 'Mollit anim consectetur adipisicing aute pariatur ad mollit ad. Officia amet aliqua non laborum dolore sint sit eu sit sunt laboris. Dolor tempor ipsum culpa Lorem ipsum ullamco ullamco dolor sit do. Do proident quis ad laborum et proident laborum. Non voluptate eiusmod aute labore ea aute.'
     },
     {
-        id: 4,
-        name: 'Pixl 9 Pro XL 5G',
-        price: 124999, 
-        image: imgCat2_4,
+        id: 36,
+        name: 'Tubetop',
+        price: 5000,
+        image: d4,
         description: 'Mollit anim consectetur adipisicing aute pariatur ad mollit ad. Officia amet aliqua non laborum dolore sint sit eu sit sunt laboris. Dolor tempor ipsum culpa Lorem ipsum ullamco ullamco dolor sit do. Do proident quis ad laborum et proident laborum. Non voluptate eiusmod aute labore ea aute.'
     },
     {
-        id: 5,
-        name: 'Apple iPhone 16',
-        price: 79900, 
-        image: imgCat2_5,
+        id: 37,
+        name: 'Men-casual',
+        price: 400,
+        image: d5,
         description: 'Mollit anim consectetur adipisicing aute pariatur ad mollit ad. Officia amet aliqua non laborum dolore sint sit eu sit sunt laboris. Dolor tempor ipsum culpa Lorem ipsum ullamco ullamco dolor sit do. Do proident quis ad laborum et proident laborum. Non voluptate eiusmod aute labore ea aute.'
     },
     {
-        id: 6,
-        name: 'Apple iPhone 15',
-        price: 65900, 
-        image: imgCat2_6,
+        id: 38,
+        name: 'Casual-Tshirt',
+        price: 677,
+        image: d6,
         description: 'Mollit anim consectetur adipisicing aute pariatur ad mollit ad. Officia amet aliqua non laborum dolore sint sit eu sit sunt laboris. Dolor tempor ipsum culpa Lorem ipsum ullamco ullamco dolor sit do. Do proident quis ad laborum et proident laborum. Non voluptate eiusmod aute labore ea aute.'
     },
     {
-        id: 7,
-        name: 'Apple iPhone 15 Pro',
-        price: 124200, 
-        image: imgCat2_7,
+        id: 39,
+        name: 'Unisex-tshirt',
+        price: 499,
+        image: d7,
         description: 'Mollit anim consectetur adipisicing aute pariatur ad mollit ad. Officia amet aliqua non laborum dolore sint sit eu sit sunt laboris. Dolor tempor ipsum culpa Lorem ipsum ullamco ullamco dolor sit do. Do proident quis ad laborum et proident laborum. Non voluptate eiusmod aute labore ea aute.'
     },
     {
-        id: 8,
-        name: 'Motorola razr 50 ',
-        price: 64999, 
-        image: imgCat2_8,
+        id: 40,
+        name: 'Colorful-tees',
+        price: 599,
+        image: d8,
         description: 'Mollit anim consectetur adipisicing aute pariatur ad mollit ad. Officia amet aliqua non laborum dolore sint sit eu sit sunt laboris. Dolor tempor ipsum culpa Lorem ipsum ullamco ullamco dolor sit do. Do proident quis ad laborum et proident laborum. Non voluptate eiusmod aute labore ea aute.'
     },
 ];
+
+function getRandomProducts(products, count) {
+    const shuffled = products.sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
+}
+
+export const randomDressProducts = getRandomProducts(dressProduct, 4);

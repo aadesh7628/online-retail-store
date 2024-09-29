@@ -1,0 +1,104 @@
+.customer-order-container {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  }
+  
+  .customer-order-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  }
+  
+  .previous-orders-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  }
+  
+  .orders-list {
+  list-style-type: none;
+  padding: 0;
+  }
+  
+  .order-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  padding: 15px;
+  }
+  
+  .order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  
+  .order-invoice-number {
+  font-size: 18px;
+  }
+  
+  .view-details-button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+  
+  .view-details-button:hover {
+  background-color: #0056b3;
+  }
+  
+  /* Current order styles */
+  .current-order {
+  border: 2px solid #28a745; /* Green border to highlight */
+  background-color: #e9fce9; /* Light green background */
+  }
+  
+  .order-details {
+  margin-top: 10px;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  }
+  
+  .order-details-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  }
+  
+  .order-details-invoice-number,
+  .order-details-total-amount {
+  font-size: 16px;
+  margin-bottom: 5px;
+  }
+  
+  .order-items-list {
+  list-style-type: none;
+  padding: 0;
+  }
+  
+  .order-item-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  }
+  
+  .order-item-id,
+  .order-item-name,
+  .order-item-quantity {
+  font-size: 14px;
+  }
+  
+  /* Additional styles for previous orders */
+  .previous-order {
+  margin-top: 15px;
+  }
+  
